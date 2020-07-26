@@ -13,7 +13,7 @@ txt = Text(cn2, width = 70, height = 400);
 txt.grid(row = 0, column = 0);
 srl = Scrollbar(cn2, command = txt.yview);
 srl.grid(row = 0, column = 1);
-txt.insert(1.0, "Made by MilkCool. Python v. " + pythonV + "\nApp v." + appV + "\nDo not use \";\" symbol in the end of line! (Nothing will happen.)\nmc_print(string) - print something\nmc_clear() - clear the console\nmc_title(string) - set the title\n");
+txt.insert(1.0, "Made by MilkCool. Python v. " + pythonV + "\nApp v. " + appV + "\nDo not use \";\" symbol in the end of line! (Nothing will happen.)\nmc_print(string) - print something\nmc_clear() - clear the console\nmc_title(string) - set the title\n");
 txt.config(state = DISABLED, yscrollcommand = srl.set);
 def mc_print(text):
     global txt;
