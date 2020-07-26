@@ -9,6 +9,6 @@
 	and it'll open!
 	
 --------------
-1.1 FEATURES
+1.2 FEATURES
 --------------
-Added mc_set_colors function. It changes the terminal colors.
+Now start text is loading from start_text.txt file.
