@@ -9,6 +9,6 @@
 	and it'll open!
 	
 --------------
-1.0.1 FEATURES
+1.1 FEATURES
 --------------
-Now mc_clear returns "Console was cleared!".
+Added mc_set_colors function. It changes the terminal colors.
