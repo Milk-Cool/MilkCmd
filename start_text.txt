@@ -1,0 +1,7 @@
+Made by MilkCool.
+Do not use ";" symbol in the end of line! (Nothing will happen.)
+mc_print(string) - print something
+mc_clear() - clear the console
+mc_title(string) - set the title
+mc_set_colors(background_color, text_color) - set the color scheme of the terminal
+
