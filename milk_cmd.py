@@ -1,5 +1,5 @@
 from sys import version as pythonV;
-appV = "1.0";
+appV = "1.0.1";
 from tkinter import *;
 root = Tk(className = "MilkCmd");
 root.geometry("620x400");
@@ -21,6 +21,7 @@ def mc_print(text):
 def mc_clear():
     global txt;
     txt.delete(1.0, END);
+    return "Console was cleared!";
 def mc_title(text):
     global root;
     root.title(text);
