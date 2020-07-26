@@ -1,5 +1,5 @@
 from sys import version as pythonV;
-appV = "1.0.1";
+appV = "1.2";
 from tkinter import *;
 root = Tk(className = "MilkCmd");
 root.geometry("620x400");
@@ -13,8 +13,6 @@ txt = Text(cn2, width = 70, height = 400);
 txt.grid(row = 0, column = 0);
 srl = Scrollbar(cn2, command = txt.yview);
 srl.grid(row = 0, column = 1);
-txt.insert(1.0, "Made by MilkCool. Python v. " + pythonV + "\nApp v. " + appV + "\nDo not use \";\" symbol in the end of line! (Nothing will happen.)\nmc_print(string) - print something\nmc_clear() - clear the console\nmc_title(string) - set the title\nmc_set_colors(background_color, text_color) - set the color scheme of the terminal\n");
-txt.config(state = DISABLED, yscrollcommand = srl.set);
 def mc_print(text):
     global txt;
     txt.insert(END, text + "\n");
@@ -44,4 +42,9 @@ def exec_a(a):
 but = Button(cnt, text = " OK ", command = exec);
 but.grid(row = 0, column = 1);
 root.bind("<Return>", exec_a);
+start_text = open("start_text.txt", "r");
+txt.insert(1.0, start_text.read());
+start_text.close();
+txt.config(state = DISABLED, yscrollcommand = srl.set);
+txt.insert(END, "Python v. " + pythonV + "\nApp v. " + appV + "\n");
 root.mainloop();
