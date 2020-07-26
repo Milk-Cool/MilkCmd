@@ -7,3 +7,8 @@
 	or
 		python3 milk_cmd.py
 	and it'll open!
+	
+--------------
+1.0.1 FEATURES
+--------------
+Now mc_clear returns "Console was cleared!".
